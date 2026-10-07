@@ -1,44 +1,44 @@
-# Generated from the v0.1.9 release manifest by cmd/mkformula; edit the generator, not this file.
+# Generated from the v0.1.10 release manifest by cmd/mkformula; edit the generator, not this file.
 class Blether < Formula
   desc "Terminal chat client for Status"
   homepage "https://github.com/forkthis-tech/blether-releases"
-  version "0.1.9"
+  version "0.1.10"
   license :cannot_represent
 
   on_macos do
     on_arm do
       depends_on macos: :sonoma
-      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/blether_v0.1.9_darwin_arm64.tar.gz"
-      sha256 "98df5c1551bca890c064f52bfea0ba52d2a93f7a5743cfcd3437dbba9ed0d341"
+      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/blether_v0.1.10_darwin_arm64.tar.gz"
+      sha256 "a647e83d270295bb0853a5aca6e2a5d52f6847976117f195bcb144c179cd7221"
 
       resource "backend" do
-        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/status-backend_v10.35.3_darwin_arm64.tar.gz"
+        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/status-backend_v10.35.3_darwin_arm64.tar.gz"
         sha256 "b67368ef015898deac9757a34deab6f8437f0a11648be700c8211fe55bd0a553"
       end
     end
     on_intel do
       depends_on macos: :ventura
-      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/blether_v0.1.9_darwin_amd64.tar.gz"
-      sha256 "8d8278ca201a17ec437b2ae4358f734643f072c96befd7e6fd8eb1bb1d169e72"
+      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/blether_v0.1.10_darwin_amd64.tar.gz"
+      sha256 "687bceb4d0766af828851633aff1e2f913f79b280a2431113eb227b2867af1a8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/blether_v0.1.9_linux_arm64.tar.gz"
-      sha256 "8c0483e9d564017ec12a088b630d7c77becd2dfd9f5ae3ce3c1ef8c8bdafbb1b"
+      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/blether_v0.1.10_linux_arm64.tar.gz"
+      sha256 "b297d4c692673ca828f16a90b297b3df41dbffed7cf3c02da751f2e9588f6c41"
 
       resource "backend" do
-        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/status-backend_v10.35.3_linux_arm64.tar.gz"
+        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/status-backend_v10.35.3_linux_arm64.tar.gz"
         sha256 "81ff7655f445285116f15bb5603b5bcd7356ce45158990a9b29519b259cd5931"
       end
     end
     on_intel do
-      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/blether_v0.1.9_linux_amd64.tar.gz"
-      sha256 "92f6d3076b893c841b8840730d530b28dcb4addf8f20c31c6d25dfedb240869f"
+      url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/blether_v0.1.10_linux_amd64.tar.gz"
+      sha256 "30f43302ff704468172971e40f06f875f7ba7247ba048522710ac7d21ad9c575"
 
       resource "backend" do
-        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.9/status-backend_v10.35.3_linux_amd64.tar.gz"
+        url "https://github.com/forkthis-tech/blether-releases/releases/download/v0.1.10/status-backend_v10.35.3_linux_amd64.tar.gz"
         sha256 "1c324b85b5b03142402e5f8766a69d001dee233d9c77f38762e5963a3b7ee26a"
       end
     end
@@ -71,6 +71,6 @@ class Blether < Formula
   end
 
   test do
-    assert_match "blether v0.1.9", shell_output("#{bin}/blether version")
+    assert_match "blether v0.1.10", shell_output("#{bin}/blether version")
   end
 end
